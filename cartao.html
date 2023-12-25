@@ -4,44 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cartao credito</title>
+    <link href="cartao.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section id="cartao">
-        <div id="logo">
-            <img src="photos/Bandeiras cartão.png" alt="logo visa">
-            <img src="photos/Vector.png" alt="icone aproximação">
-        </div>
-        <div id="numeroCartao">
-            <img  src="photos/Ellipse.png">
-            <img  src="photos/Ellipse.png">
-            <img  src="photos/Ellipse.png">
-            <img  src="photos/Ellipse.png">
-            <div></div>
-            <img  src="photos/Ellipse.png">
-            <img  src="photos/Ellipse.png">
-            <img  src="photos/Ellipse.png">
-            <img  src="photos/Ellipse.png">
-            <div></div>
-            <img  src="photos/Ellipse.png">
-            <img  src="photos/Ellipse.png">
-            <img  src="photos/Ellipse.png">
-            <img  src="photos/Ellipse.png">
-            <div></div>
-            <img  src="photos/Ellipse.png">
-            <img  src="photos/Ellipse.png">
-            <img  src="photos/Ellipse.png">
-            <img  src="photos/Ellipse.png">
-        </div>
-        <div id="nome/validade">
-            <span id="nome">Seu nome aqui</span>
-            <div id="validade">
-                <img src="photos/Ellipse.png">
-                <img src="photos/Ellipse.png">
-                <span>/</span>
-                <img src="photos/Ellipse.png">
-                <img src="photos/Ellipse.png">
+    <main>
+        <section id="cartao">
+            <div id="logo">
+                <img src="photos/Bandeiras cartão.png" alt="logo visa" id="imgVisa">
+                <img src="photos/Vector.png" alt="icone aproximação" id="aproximacao">
             </div>
-        </div>
-    </section>
+            <div id="numeroCartao">
+                <div id="bola">
+                    <span>•</span>
+                    <span>•</span>
+                    <span>•</span>
+                    <span>•</span>
+                </div>
+                <div id="bola">
+                    <span>•</span>
+                    <span>•</span>
+                    <span>•</span>
+                    <span>•</span>
+                </div>
+                <div id="bola">
+                    <span>•</span>
+                    <span>•</span>
+                    <span>•</span>
+                    <span>•</span>
+                </div>
+                <div id="bola">
+                    <span>•</span>
+                    <span>•</span>
+                    <span>•</span>
+                    <span>•</span>
+                </div>
+            </div>
+            <div id="nomeValidade">
+                <span id="nome">Seu nome aqui</span>
+                <div id="validade">
+                    <span>•</span>
+                    <span>•</span>
+                    <span id="barra">/</span>
+                    <span>•</span>
+                    <span>•</span>
+                </div>
+            </div>
+            <span id="mensagem"><img src="photos/ShieldCheck.png" alt="escudo sinalizando segurança">Seus dados estão seguros</span>
+        </section>
+        <form id="formulario">
+            <label for="inserirNum" id="numCartao"> <p>Número do cartão</p>
+                <input type="text" id="inserirNum" name="inserirNum" placeholder="Digite o número do cartão">
+            </label>
+            <label for="inserirTitular" id="nomeTitular"><p>Nome do títular</p>
+                <input type="text" id="inserirTitular" name="inserirTitular" placeholder="Nome como está no cartão">
+            </label>
+            <div id="validadeCW">
+                <label for="inserirValidade" id="validade"><p>Validade</p>
+                    <input type="text" id="inserirValidade" name="inserirValidade" placeholder="mm/aa">
+                </label>
+                <label for="codigoSeguranca" id="codigo"><p>cw <img src="photos/Question.png"></p>
+                    <input type="number" id="codigoSeguranca" name="codigoSeguranca" placeholder="•••">
+                </label>
+            </div>
+        </form>
+    </main>
+    <button type="submit" form="formulario" value="formulario" id="registrar">Adicionar cartão</button>
 </body>
 </html>
