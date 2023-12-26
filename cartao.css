@@ -59,9 +59,11 @@ body {
     margin-bottom: 40px;
 }
 
-#nome, #barra {
+#nome{
     color: rgba(249,250,251,0.5);
     font-weight: 400;
+    width: 159px;
+    font-size: 12px;
 }
 
 p {
@@ -73,6 +75,13 @@ p {
     display: block;
     color: #9CA3AF;
     margin-bottom: 100px;
+}
+
+#paragrafoErro {
+    margin: 0;
+    display: inline;
+    width: 230px;
+    height: 16px;
 }
 
 #inserirNum, #inserirTitular{
@@ -147,6 +156,12 @@ p {
     border: 1.5px solid #9333EA;
 }
 
+#mensagemErro{
+    font-size: 14px;
+    display: block;
+    margin-bottom: 24px;
+}
+
 @media (min-width: 380px) and (max-width: 720px) {
     body{
         font-size: 20px;
@@ -199,7 +214,7 @@ p {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 100px;
+        margin-top: 90px;
     }
     main{
         display: flex;
